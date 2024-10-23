@@ -1,4 +1,4 @@
-const mysql = require("mysql");
+const mysql = require("mysql2");
 
 // ตั้งค่าการเชื่อมต่อกับฐานข้อมูล local ผ่าน XAMPP
 // const db = mysql.createPool({
@@ -6,18 +6,18 @@ const mysql = require("mysql");
 //   host: "localhost", // ใช้ localhost เพราะ phpMyAdmin รันใน XAMPP บนเครื่อง local
 //   user: "root", // ชื่อผู้ใช้ค่าเริ่มต้นของ XAMPP
 //   password: "", // รหัสผ่าน (ว่างเปล่าใน XAMPP เริ่มต้น)
-//   database: "backend_delivery", // ใส่ชื่อฐานข้อมูลที่คุณสร้างใน phpMyAdmin
+//   database: "test", // ใส่ชื่อฐานข้อมูลที่คุณสร้างใน phpMyAdmin
 //   port: 3306, // ค่า port ของ MySQL
 // });
 
 const db = mysql.createPool({
   connectionLimit: 10, // จำกัดจำนวน connection
   host: "139.162.13.242", // ใส่ host ที่ต้องการเชื่อมต่อ
-  user: "xholicon_gon", // ชื่อผู้ใช้ฐานข้อมูล
+  user: "xholicon_bob", // ชื่อผู้ใช้ฐานข้อมูล
   password: "gonnaja7", // รหัสผ่าน
-  database: "xholicon_delivery", // ชื่อฐานข้อมูล
+  database: "xholicon_delivery_database", // ชื่อฐานข้อมูล
   charset: "utf8", // กำหนด character set
-  collation: "utf8_unicode_ci", // กำหนด collation สำหรับฐานข้อมูล
+  // collation: "utf8_unicode_ci", // กำหนด collation สำหรับฐานข้อมูล
 });
 
 // การตรวจสอบการเชื่อมต่อ
