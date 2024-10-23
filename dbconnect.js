@@ -13,9 +13,9 @@ const mysql = require("mysql2");
 const db = mysql.createPool({
   connectionLimit: 10, // จำกัดจำนวน connection
   host: "139.162.13.242", // ใส่ host ที่ต้องการเชื่อมต่อ
-  user: "xholicon_bob", // ชื่อผู้ใช้ฐานข้อมูล
-  password: "gonnaja7", // รหัสผ่าน
-  database: "xholicon_delivery_database", // ชื่อฐานข้อมูล
+  user: "xholicon_devy", // ชื่อผู้ใช้ฐานข้อมูล
+  password: "+#;murgzDWT#", // รหัสผ่าน
+  database: "xholicon_meenoi", // ชื่อฐานข้อมูล
   charset: "utf8", // กำหนด character set
   // collation: "utf8_unicode_ci", // กำหนด collation สำหรับฐานข้อมูล
 });
