@@ -8,7 +8,7 @@ const mysql = require("mysql2");
 //   password: "", // รหัสผ่าน (ว่างเปล่าใน XAMPP เริ่มต้น)
 //   database: "test", // ใส่ชื่อฐานข้อมูลที่คุณสร้างใน phpMyAdmin
 //   port: 3306, // ค่า port ของ MySQL
-// });
+
 
 const db = mysql.createPool({
   connectionLimit: 10, // จำกัดจำนวน connection
